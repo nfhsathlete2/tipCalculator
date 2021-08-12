@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <section class="flex-column">
+    <article id="logo" class="flex-row">
+      <img src="/images/logo.svg" alt="Splitter Logo">
+    </article>
+    <article id="calculator" class="flex-column">
+      <div id="inputs" class="flex-column">
+          <div id="billAmount" class="div-bottom-gap">
+            <p class="text-input-title">Bill</p>
+            <div class="input-container">
+              <img src="/images/icon-dollar.svg" alt="dollar sign">
+              <input id="inputs-bill" type="text">
+            </div>
+          </div> 
+          <div id="tipAmount" class="div-bottom-gap">
+            <div><p class="text-input-title">Select Tip %</p></div>
+            <div class="grid">
+                <button id="fivePercent" class="grid-item grid-item-a"><p class="text-inputs">5%</p></button>
+                <button id="tenPercent" class="grid-item grid-item-b"><p class="text-inputs">10%</p></button>
+                <button id="fifteenPercent" class="grid-item grid-item-a"><p class="text-inputs">15%</p></button>
+                <button id="twentyfivePercent" class="grid-item grid-item-b"><p class="text-inputs">25%</p></button>
+                <button id="fiftyPercent" class="grid-item grid-item-a"><p class="text-inputs">50%</p></button>
+                <button id="customPercent" class="grid-item grid-item-b"><p class="text-inputs">Custom</p></button>
+            </div>
+          </div>
+          <div id="numberOfPeople" class="div-bottom-gap">
+            <p class="text-input-title">Number of People</p>
+            <div class="input-container">
+              <img src="/images/icon-person.svg" alt="person icon">
+              <input id="inputs-people" type="text">
+            </div>
+          </div>
+      </div>
+      <div id="results">
+        <div class="results-flex"> 
+          <div>
+            <h3 class="text-input-title">Tip Amount</h3> 
+            <p class="subtitle">/ person</p> 
+          </div>
+          <div>
+            <p class="calculated-number">$4.27</p> 
+          </div>
+        </div>
+        <div class="results-flex">
+          <div>
+            <h3 class="text-input-title">Total</h3> 
+            <p class="subtitle">/ person</p> 
+          </div>
+          <div>
+            <p class="calculated-number">$32.79</p> 
+          </div>
+        </div>
+        <div id="reset-btn">
+          <button>RESET</button>
+        </div>
+
+      </div>
+
+    </article>
+  </section>
+</body>
+<script src="index.js"></script>
+
+</html>
